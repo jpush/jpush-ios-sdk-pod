@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "Jpush-SDK"
+  s.name         = "JPushSDK"
   s.version      = "1.8.0"
   s.summary      = "JPush official SDK for IOS"
 
@@ -20,10 +20,10 @@ Pod::Spec.new do |s|
   
   s.frameworks = "Foundation", "CFNetwork", "Security", "CoreGraphics", "CoreTelephony" ,"SystemConfiguration", "UIKit"
 
-  s.libraries = "PushSDK", "z"
+  s.libraries = "z"
 
   s.requires_arc = true
 
-  s.xcconfig = { "LIBRARY_SEARCH_PATHS" => "$(PODS_ROOT)/JPush-SDK/lib" }
+  s.xcconfig = { "LIBRARY_SEARCH_PATHS" => "$(PODS_ROOT)/JPushSDK/lib" }
 
 end
