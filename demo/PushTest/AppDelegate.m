@@ -14,7 +14,7 @@
 #import "AppDelegate.h"
 #import "JPUSHService.h"
 #import "RootViewController.h"
-
+#import <AdSupport/AdSupport.h>
 @implementation AppDelegate {
   RootViewController *rootViewController;
 }
@@ -23,6 +23,8 @@
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   // Override point for customization after application launch.
+  NSString *advertisingId = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+  
   if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
       //可以添加自定义categories
       [JPUSHService registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |
@@ -36,10 +38,14 @@
                                                         UIRemoteNotificationTypeAlert)
                                             categories:nil];
   }
-    
+  
+  //如不需要使用IDFA，advertisingIdentifier 可为nil
   [JPUSHService setupWithOption:launchOptions appKey:appKey
-                        channel:channel apsForProduction:isProduction];
-
+                        channel:channel
+               apsForProduction:isProduction
+          advertisingIdentifier:advertisingId];
+  
+  
   [[NSBundle mainBundle] loadNibNamed:@"JpushTabBarViewController"
                                 owner:self
                               options:nil];
