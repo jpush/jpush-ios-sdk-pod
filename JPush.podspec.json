@@ -28,9 +28,11 @@
     "SystemConfiguration",
     "CoreGraphics",
     "Foundation",
-    "Security"
+    "Security",
+    "UserNotifications"
   ],
   "libraries": [
-    "z"
+    "z",
+    "libresolv"
    ]
 }
