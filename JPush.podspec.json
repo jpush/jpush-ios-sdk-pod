@@ -33,6 +33,6 @@
   ],
   "libraries": [
     "z",
-    "libresolv"
+    "resolv"
    ]
 }
