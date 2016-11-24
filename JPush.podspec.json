@@ -30,7 +30,7 @@
     "Foundation",
     "Security",
   ],
-  "weak_framework":"UserNotifications",
+  "weak_frameworks": "UserNotifications",
   "libraries": [
     "z",
     "resolv"
