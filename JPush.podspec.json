@@ -31,6 +31,9 @@
     "Security",
     "UserNotifications"
   ],
+  "weak_frameworks": [
+    "UserNotifications"
+  ],
   "libraries": [
     "z",
     "resolv"
