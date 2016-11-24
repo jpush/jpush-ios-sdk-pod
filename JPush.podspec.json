@@ -28,9 +28,11 @@
     "SystemConfiguration",
     "CoreGraphics",
     "Foundation",
-    "Security",
+    "Security"
   ],
-  "weak_frameworks": "UserNotifications",
+  "weak_frameworks": [
+  "UserNotifications"
+  ],
   "libraries": [
     "z",
     "resolv"
