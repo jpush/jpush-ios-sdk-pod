@@ -29,7 +29,6 @@
     "CoreGraphics",
     "Foundation",
     "Security",
-    "UserNotifications"
   ],
   "weak_frameworks": [
     "UserNotifications"
