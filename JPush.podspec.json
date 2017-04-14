@@ -1,6 +1,6 @@
 {
   "name": "JPush",
-  "version": "3.0.0",
+  "version": "3.0.3",
   "summary": "Offically supported JPush iOS SDK Pod. 官方支持的极光推送SDK. ",
   "description": "Offically supported JPush iOS SDK Pod. 官方支持的极光推送SDK. \n集成详情请访问官方文档网站：http://docs.jpush.io ",
   "homepage": "http://www.jpush.cn/",
@@ -15,11 +15,10 @@
     "ios": "5.0"
   },
   "source": {
-    "git": "https://github.com/jpush/jpush-ios-sdk-pod.git",
-    "tag": "3.0.0"
+    "http": "https://sdkfiledl.jiguang.cn/cocoapods/jpush/JPush-iOS-3.0.3.zip"
   },
-  "source_files": "lib/*.h",
-  "vendored_libraries": "lib/*.a",
+  "source_files": "*.h",
+  "vendored_libraries": "*.a",
   "frameworks": [
     "UIKit",
     "CFNetwork",
@@ -36,5 +35,10 @@
   "libraries": [
     "z",
     "resolv"
-   ]
+   ],
+  "dependencies": {
+    "JCore": [
+      "~> 1.1.1"
+    ]
+  }
 }
