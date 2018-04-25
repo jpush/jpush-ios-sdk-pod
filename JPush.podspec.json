@@ -1,9 +1,9 @@
 {
   "name": "JPush",
   "version": "3.0.9",
-  "summary": "Offically supported JPush iOS SDK Pod. 官方支持的极光推送SDK. ",
-  "description": "Offically supported JPush iOS SDK Pod. 官方支持的极光推送SDK. \n集成详情请访问官方文档网站：http://docs.jiguang.cn ",
-  "homepage": "http://www.jiguang.cn/",
+  "summary": "Officially supported JPush iOS SDK Pod. 官方支持的极光推送SDK. ",
+  "description": "Officially supported JPush iOS SDK Pod. 官方支持的极光推送SDK. \n集成详情请访问官方文档网站：https://docs.jiguang.cn ",
+  "homepage": "https://www.jiguang.cn/",
   "license": {
 	  "type":"Copyright",
 	  "text":"Copyright jiguang.cn"
