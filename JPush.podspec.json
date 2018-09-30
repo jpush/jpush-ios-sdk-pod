@@ -1,12 +1,12 @@
 {
   "name": "JPush",
-  "version": "3.0.9",
+  "version": "3.1.0",
   "summary": "Officially supported JPush iOS SDK Pod. 官方支持的极光推送SDK. ",
   "description": "Officially supported JPush iOS SDK Pod. 官方支持的极光推送SDK. \n集成详情请访问官方文档网站：https://docs.jiguang.cn ",
   "homepage": "https://www.jiguang.cn/",
   "license": {
-	  "type":"Copyright",
-	  "text":"Copyright jiguang.cn"
+    "type": "Copyright",
+    "text": "Copyright jiguang.cn"
   },
   "authors": {
     "JPush": "support@jpush.cn"
@@ -15,7 +15,7 @@
     "ios": "5.0"
   },
   "source": {
-    "http": "https://sdkfiledl.jiguang.cn/cocoapods/jpush/JPush-iOS-3.0.9.zip"
+    "http": "https://sdkfiledl.jiguang.cn/cocoapods/jpush/JPush-iOS-3.1.0.zip"
   },
   "source_files": "*.h",
   "vendored_libraries": "*.a",
@@ -30,15 +30,15 @@
     "Security"
   ],
   "weak_frameworks": [
-  "UserNotifications"
+    "UserNotifications"
   ],
   "libraries": [
     "z",
     "resolv"
-   ],
+  ],
   "dependencies": {
     "JCore": [
-      "~> 1.1.7"
+      "~> 1.2.0"
     ]
   }
 }
